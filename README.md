@@ -1,0 +1,1 @@
+# Wavelet-Based-Feature-Extraction-and-Thresholding-for-ORL-Dataset-Classification
