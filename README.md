@@ -74,8 +74,33 @@ This script evaluates the performance of the classification system using the **F
 performance
 ```
 
----
+-------------------------------------------------------------------
+### 4. `identification.m`
+This script performs the identification phase by comparing feature vectors from the test set with those from the training set using the **Euclidean distance**.
 
+#### Workflow:
+- **Input**:
+  - Feature vectors stored in `Train` and `Test` folders.
+- **Identification Process**:
+  - Each test vector is compared to all training vectors.
+  - The Euclidean distance between the test vector and each training vector is computed.
+  - The subject with the smallest distance is considered the predicted identity.
+- **Performance Evaluation**:
+  - The number of correctly identified subjects is counted.
+  - The **Identification Rate (TID)** is calculated using the formula:
+    
+    ```
+    TID = (Number of Correct Identifications / Total Number of Tests) * 100
+    ```
+- **Output**:
+  - Displays the identification rate (TID) in the MATLAB command window.
+
+#### Example:
+```matlab
+identification
+```
+
+-------------------------------------------------------------------
 ## Workflow Summary
 
 1. **Prepare the ORL Database**: 
